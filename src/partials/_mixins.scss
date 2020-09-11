@@ -1,0 +1,9 @@
+@mixin lnone {
+    list-style: none;
+    display: inline-block;
+    padding-left: 10px;
+}
+
+@mixin textnone {
+    text-decoration: none;
+}
