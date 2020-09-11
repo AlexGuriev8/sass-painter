@@ -1,0 +1,75 @@
+@import 'partials/_variables.scss';
+@import 'partials/_mixins.scss';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+nav {
+    background-color: #101010;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+.nav-top{
+    height: $heightNavbar;
+}
+
+.nav-top ul{
+  position: absolute;
+  right: 11%;
+  padding-top: 5px;
+   li{
+        @include lnone;  
+    i{
+        font-size: 15px;
+        padding-left: 5px;
+        color: #009cff;
+    }
+    a {
+        @include textnone;
+        color: $col;
+    }
+   }
+}
+
+   .nav-bottom  {
+     display: flex;
+     align-items: center;
+     height: $heightNavbar;
+   }
+
+.nav-bottom ul{
+    display: flex;
+    justify-content: center;
+   li{
+        @include lnone;
+    a {
+        @include textnone;
+        padding-left: 25px;
+        color: $white;
+    }
+   }
+}
+
+
+#hero {
+    height: 450px;
+    background-image: url('https://www.painterartist.com/static/ptr/images/home/bg-painter-home.jpg');
+    color: #fff;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;  
+}
